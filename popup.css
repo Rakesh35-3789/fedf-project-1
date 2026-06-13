@@ -1,0 +1,179 @@
+* { box-sizing: border-box; }
+
+body {
+  width: 460px;
+  min-height: 820px;
+  margin: 0;
+  color: #fff;
+  font-family: Inter, Arial, sans-serif;
+  background:
+    radial-gradient(circle at 20% 0%, #22c55e22, transparent 35%),
+    radial-gradient(circle at 90% 80%, #2563eb22, transparent 35%),
+    linear-gradient(135deg, #020617, #07111f, #020617);
+}
+
+.app {
+  padding: 18px;
+}
+
+.top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+h1 { margin: 0; font-size: 29px; }
+p { color: #9ca3af; }
+
+#badge {
+  padding: 10px 14px;
+  border-radius: 999px;
+  font-weight: 900;
+  background: linear-gradient(135deg, #f59e0b, #f97316);
+  box-shadow: 0 0 25px rgba(245,158,11,.4);
+}
+
+.hero {
+  margin-top: 18px;
+  padding: 20px;
+  border-radius: 26px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(15, 23, 42, .85);
+  border: 1px solid rgba(34,197,94,.25);
+  box-shadow: 0 0 40px rgba(34,197,94,.1);
+}
+
+.hero h2 {
+  margin: 0;
+  font-size: 65px;
+  color: #4ade80;
+  text-shadow: 0 0 22px rgba(74,222,128,.65);
+}
+
+.hero small {
+  color: #94a3b8;
+  font-size: 30px;
+}
+
+.level {
+  padding: 18px;
+  border-radius: 22px;
+  background: rgba(34,197,94,.08);
+  border: 1px solid rgba(34,197,94,.35);
+  text-align: center;
+  font-weight: 900;
+}
+
+button {
+  width: 100%;
+  padding: 14px;
+  margin-top: 14px;
+  border: none;
+  border-radius: 16px;
+  color: white;
+  font-weight: 900;
+  background: linear-gradient(135deg,#22c55e,#16a34a);
+  cursor: pointer;
+}
+
+.danger {
+  background: linear-gradient(135deg,#ef4444,#b91c1c);
+}
+
+.stats {
+  margin-top: 14px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+
+.stats div,
+.card {
+  background: rgba(15, 23, 42, .82);
+  border: 1px solid rgba(255,255,255,.08);
+  border-radius: 22px;
+  backdrop-filter: blur(14px);
+}
+
+.stats div {
+  padding: 16px;
+}
+
+.stats span {
+  font-size: 30px;
+  font-weight: 900;
+}
+
+.stats p {
+  margin: 6px 0 0;
+  font-size: 12px;
+}
+
+.card {
+  margin-top: 16px;
+  padding: 17px;
+}
+
+.card h3 {
+  margin: 0;
+}
+
+.head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.head p {
+  font-size: 12px;
+  margin: 5px 0 0;
+}
+
+#trend {
+  font-weight: 900;
+}
+
+#graph {
+  margin-top: 12px;
+  height: 270px;
+  border-radius: 20px;
+  overflow: hidden;
+  background:
+    radial-gradient(circle at 50% 50%, #22c55e16, transparent 50%),
+    linear-gradient(180deg, #06121d, #020617);
+}
+
+#coach {
+  line-height: 1.6;
+  color: #d1d5db;
+}
+
+.activity-row {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+  border-bottom: 1px solid rgba(255,255,255,.06);
+}
+
+.up { color: #4ade80; }
+.down { color: #f87171; }
+
+.progress {
+  margin-top: 16px;
+}
+
+.track {
+  height: 12px;
+  background: #1e293b;
+  border-radius: 999px;
+  overflow: hidden;
+}
+
+#badgeProgress {
+  height: 100%;
+  width: 0%;
+  background: linear-gradient(90deg,#22c55e,#38bdf8,#a855f7);
+  transition: .5s;
+}

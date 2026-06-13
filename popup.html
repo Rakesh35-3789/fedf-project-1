@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>FocusForge AI</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <main class="app">
+    <section class="top">
+      <div>
+        <h1>FocusForge AI</h1>
+        <p>Build focus. Destroy distractions.</p>
+      </div>
+      <div id="badge">🥉 Bronze</div>
+    </section>
+
+    <section class="hero">
+      <div>
+        <p>Focus Score</p>
+        <h2><span id="score">0</span><small>/100</small></h2>
+        <p id="coachMini">Start strong today.</p>
+      </div>
+      <div class="level">
+        🏆
+        <span id="rank">Beginner</span>
+      </div>
+    </section>
+
+    <button id="toggleFocus">Focus Mode: ON</button>
+
+    <section class="stats">
+      <div><span id="focusMinutes">0</span><p>Focus Actions</p></div>
+      <div><span id="warnings">0</span><p>Sites Blocked</p></div>
+      <div><span id="youtubeBlocked">0</span><p>YouTube Blocks</p></div>
+      <div><span id="tabsClosed">0</span><p>Tabs Closed</p></div>
+    </section>
+
+    <section class="card">
+      <div class="head">
+        <div>
+          <h3>Focus Performance</h3>
+          <p>Green rises for focus. Red drops for distractions.</p>
+        </div>
+        <span id="trend">Origin</span>
+      </div>
+      <div id="graph"></div>
+    </section>
+
+    <section class="card">
+      <h3>Recent Activity</h3>
+      <div id="activity"></div>
+    </section>
+
+    <section class="card">
+      <h3>AI Coach</h3>
+      <p id="coach">Open study tabs to grow your focus line.</p>
+    </section>
+
+    <section class="progress">
+      <p id="nextBadge">Next badge loading...</p>
+      <div class="track"><div id="badgeProgress"></div></div>
+    </section>
+
+    <button id="resetData" class="danger">Reset Data</button>
+  </main>
+
+  <script src="popup.js"></script>
+</body>
+</html>

@@ -1,0 +1,22 @@
+{
+  "manifest_version": 3,
+  "name": "FocusForge AI",
+  "version": "11.1.0",
+  "description": "AI Study Guardian that blocks distractions, filters YouTube, tracks focus, and builds discipline.",
+  "permissions": ["tabs", "storage", "scripting", "offscreen"],
+  "host_permissions": ["http://*/*", "https://*/*"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "FocusForge AI"
+  },
+  "content_scripts": [
+    {
+      "matches": ["http://*/*", "https://*/*"],
+      "js": ["content.js"],
+      "run_at": "document_idle"
+    }
+  ]
+}
